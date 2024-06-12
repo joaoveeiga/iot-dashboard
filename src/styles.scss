@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%; /* Define a largura máxima das imagens como 100% do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .max-value-container {
+    margin-top: 20px;
+  }
+}
